@@ -1,0 +1,7 @@
+{
+  "name": "Angular Sample",
+  "dockerComposeFile": "./docker-compose.yml",
+  "service": "ng",
+  "workspaceFolder": "/workspaces/workdir",
+  "postCreateCommand": "npm install"
+}

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  ng:
+    build: ./
+    working_dir: /workspaces/workdir
+    ports:
+      - 4200:4200
+    volumes:
+      - ../:/workspaces/workdir
+      - node-modules:/workspaces/workdir/node_modules
+    command: sh -c "npm install && npm run start"
+
+volumes:
+  node-modules:
+
